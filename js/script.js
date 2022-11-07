@@ -5,13 +5,11 @@ const cards = [
         job: 'Founder & CEO',
         imgUser: 'wayne-barnett-founder-ceo.jpg'
     },
-
     {
         name: 'Angela Caroll',
         job: 'Chief Editor',
         imgUser: 'angela-caroll-chief-editor.jpg'
     },
-
     {
         name: 'Walter Gordon',
         job: 'Office Manager',
@@ -38,7 +36,7 @@ const cards = [
 ]
 const container = document.getElementById("containercards");
 
-for(let i=0; i<cards.length; i++){
+for (let i = 0; i < cards.length; i++) {
     container.innerHTML += `<div class="card" style="width: 25rem;"> <img class="img-top" src="img/${cards[i].imgUser}"> <div class="card-body"> <h4>${cards[i].name}</h4> <span>${cards[i].job}</span> </div> </div>`
 }
 
