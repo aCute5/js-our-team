@@ -1,4 +1,4 @@
-
+// SOLUZIONE 1 CREO UN ARRAY DI OGGETTO CON 3 VALORI CHE OSNO LE FOTO POI FACCIO ITERARE LA CARD CON INDICE I VALORI DEGLI OGGETTI FINO A CHE NON FINISCONO. 
 const cards = [
     {
         name: 'Wayne Barnett',
@@ -39,5 +39,8 @@ const cards = [
 const container = document.getElementById("containercards");
 
 for(let i=0; i<cards.length; i++){
-    container.innerHTML += `<div class="card" style="width: 25rem;"> <img class="img-top" src="img/${cards[i].imgUser}"> <div class="card-info"> <h4>${cards[i].name}</h4> <span>${cards[i].job}</span> </div> </div>`
+    container.innerHTML += `<div class="card" style="width: 25rem;"> <img class="img-top" src="img/${cards[i].imgUser}"> <div class="card-body"> <h4>${cards[i].name}</h4> <span>${cards[i].job}</span> </div> </div>`
 }
+
+
+// SOLUZIONE 2 CREO UNA FUNCTION CHE CERCA DI RICREARE LE CARDS

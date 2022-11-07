@@ -13,9 +13,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.card{
-    width: 8rem;
-}
+
 img{
     width: 100%;
 }
