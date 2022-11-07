@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    
+}
+.container{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 8rem;
+}
+img{
+    width: 100%;
+}
+.first-part{
+    text-align: center;
+}
