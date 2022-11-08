@@ -1,5 +1,5 @@
 // SOLUZIONE 1 CREO UN ARRAY DI OGGETTO CON 3 VALORI CHE OSNO LE FOTO POI FACCIO ITERARE LA CARD CON INDICE I VALORI DEGLI OGGETTI FINO A CHE NON FINISCONO. 
-const cards = [
+const cards = [ //Dati delle Cards
     {
         name: 'Wayne Barnett',
         job: 'Founder & CEO',
@@ -42,3 +42,16 @@ for (let i = 0; i < cards.length; i++) {
 
 
 // SOLUZIONE 2 CREO UNA FUNCTION CHE CERCA DI RICREARE LE CARDS
+
+function generateCard(obj){ // Questa function genera una card generica da appendere in un qualche container
+    return `
+    <div class="card" style="width: 25rem;"> 
+        <img class="img-top" src="img/${cards[i].imgUser}"> 
+        <div class="card-body"> 
+        <h4>${cards[i].name}</h4> 
+        <span>${cards[i].job}</span> 
+        </div> 
+    </div>
+    `;
+}
+cards.forEach(objPerson => container.innerHTML += generateCard(objPerson)); // con il metodo forEach aggiungo le card al container. 
